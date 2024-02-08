@@ -23,7 +23,24 @@ const constructor = new Object();
 constructor.name = "Jahid";
 constructor.Gender = ['Male', 'Fe-male'];
 constructor.fun = function (){
-                return  this.Gender[0];
+    return  this.Gender[0];
             }
+            
+// console.log(constructor.fun())
 
-console.log(constructor.fun())
+
+
+
+
+// ====================================================   CONSTRACTOR FUNCTION
+
+    function person (fullNmae, age, activity){
+          this.fullNmae = fullNmae;
+          this.age = age;
+          this.activity = activity;
+     }
+    const person1 = new person("Mohd. Jahidul Islam", 25, "Full Stack Developer")
+    const person2 = new person("Mohammad", 25, "Developer")
+    const person3 = new person("Jhon Doe", 27, " JS Developer")
+
+    console.log(person1,person2,person3)
