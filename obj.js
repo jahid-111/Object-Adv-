@@ -1,7 +1,7 @@
 // console.log("obj.js")
 
 
-// LITERAL OBJECT 
+// ====================================================   LITERAL OBJECT 
 const obj = {
         Prefix : "Mohd",
         First : 'Jahidul',
@@ -14,9 +14,16 @@ const obj = {
 }
 obj.hobby = ["Web Developer", "Full-Stack Developer"]
 
-console.log(obj.Activity())
+// console.log(obj.Activity())
 
 
 
-// OBJECT CONSTRACTOR 
+// ====================================================   OBJECT CONSTRACTOR 
+const constructor = new Object();
+constructor.name = "Jahid";
+constructor.Gender = ['Male', 'Fe-male'];
+constructor.fun = function (){
+                return  this.Gender[0];
+            }
 
+console.log(constructor.fun())
