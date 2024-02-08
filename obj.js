@@ -34,13 +34,33 @@ constructor.fun = function (){
 
 // ====================================================   CONSTRACTOR FUNCTION
 
-    function person (fullNmae, age, activity){
+function person (fullNmae, age, activity){
           this.fullNmae = fullNmae;
           this.age = age;
           this.activity = activity;
-     }
-    const person1 = new person("Mohd. Jahidul Islam", 25, "Full Stack Developer")
-    const person2 = new person("Mohammad", 25, "Developer")
-    const person3 = new person("Jhon Doe", 27, " JS Developer")
+        }
+        const person1 = new person("Mohd. Jahidul Islam", 25, "Full Stack Developer")
+        const person2 = new person("Mohammad", 25, "Developer")
+        const person3 = new person("Jhon Doe", 27, " JS Developer")
+        
+        // console.log(person1,person2,person3)
 
-    console.log(person1,person2,person3)
+
+        
+ // ====================================================   OBJECT CLASS (Es6)
+
+ class car{
+
+        name = 'ferrari';
+        model = 'Daytona SP3'
+        year = 2022;
+        constructor (height, width){
+            this.height = height
+            this.width = width;
+        }
+ }
+
+ const details  = new car ("120Cm'", "1200Cm'")
+ const color  = new car ("120Cm'", "1200Cm'")
+
+ console.log(details)
